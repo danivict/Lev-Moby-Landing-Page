@@ -346,7 +346,7 @@ body section:nth-child(4) {
 
 body section:nth-child(5) {
   min-height: max(870px, 140vh);
-  background: url("/assets/images/background-calculadoora.svg") center top/cover;
+  background: url("/assets/images/background-calculadoora.svg") center/cover;
   color: white;
   display: flex;
   flex-direction: column;
