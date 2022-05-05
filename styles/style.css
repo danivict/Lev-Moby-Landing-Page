@@ -63,7 +63,7 @@ a:hover {
 
 main {
   background: url("/assets/images/background.jpg") no-repeat bottom/cover;
-  height: max(670px, 100vh);
+  min-height: max(670px, 100vh);
   color: white;
 }
 
@@ -200,7 +200,7 @@ form input {
 }
 
 body section:nth-child(2) {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   position: relative;
   grid-template-columns: 1fr 1fr;
@@ -242,7 +242,7 @@ body section:nth-child(2)::before {
 }
 
 body section:nth-child(3) {
-  height: max(401px, 60vh);
+  min-height: max(401px, 60vh);
   padding: 0 20rem;
   background: url("/assets/images/background-inscricao.jpg") left/cover;
   color: white;
@@ -281,7 +281,7 @@ form button {
 }
 
 body section:nth-child(4) {
-  height: max(1010px, 150vh);
+  min-height: max(1010px, 150vh);
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -345,7 +345,7 @@ body section:nth-child(4) {
 }
 
 body section:nth-child(5) {
-  height: max(870px, 150vh);
+  min-height: max(870px, 160vh);
   background: url("/assets/images/background-calculadoora.svg") center top/cover;
   color: white;
   display: flex;
@@ -357,7 +357,7 @@ body section:nth-child(5) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25rem;
+  margin: 300px 0 100px 0;
 }
 
 .sec-5-top-content p {
@@ -596,7 +596,7 @@ p.info-description {
 
 body section:nth-child(6) {
   background: linear-gradient(180deg, #ff8f29 0%, #e46d00 100%);
-  height: max(401px, 60vh);
+  min-height: max(401px, 60vh);
   padding: 0 20rem;
   color: white;
 
@@ -614,7 +614,7 @@ body section:nth-child(6) {
 }
 
 footer {
-  height: max(330px, 50vh);
+  min-height: max(330px, 50vh);
   background-color: black;
   padding: 0 min(20rem, 10%);
   color: white;
@@ -705,6 +705,8 @@ footer div .button {
   filter: invert(25%) sepia(60%) saturate(4255%) hue-rotate(337deg) brightness(100%) contrast(108%);
 }
 
+
+
 @media screen and (max-width: 1400px),
 screen and (min-height: 710px) {
   html {
@@ -712,7 +714,7 @@ screen and (min-height: 710px) {
   }
 
   .sec-5-top-content {
-    margin-top: 23rem;
+    /* margin-top: 250px; */
   }
 }
 
@@ -1007,7 +1009,7 @@ screen and (min-height: 710px) {
   }
 
   .sec-5-top-content {
-    margin-top: max(25rem, 200px);
+    /* margin-top: 35rem; */
   }
 
   .calculators-wrapper {
@@ -1109,6 +1111,12 @@ screen and (min-height: 710px) {
 
 }
 
+@media (min-width: 3025px) {
+  .sec-5-top-content {
+    /* margin-top: 40rem; */
+  }
+}
+
 @media (max-width: 490px) {
   html {
     font-size: 1.5vw;
@@ -1140,6 +1148,12 @@ screen and (min-height: 710px) {
 
 }
 
+@media (max-width: 415px) {
+  .sec-5-top-content {
+    /* margin-top: 50rem; */
+  }
+}
+
 @media (max-width: 390px) {
   .container {
     grid-template-rows: 45rem 1fr;
@@ -1149,6 +1163,12 @@ screen and (min-height: 710px) {
 @media (max-width: 350px) {
   .container {
     grid-template-rows: 60rem 1fr;
+  }
+}
+
+@media (max-width: 340px) {
+  .sec-5-top-content {
+    /* margin-top: 70rem; */
   }
 }
 
