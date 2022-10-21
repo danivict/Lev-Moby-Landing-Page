@@ -47,19 +47,31 @@ function showDespesasMensais(element) {
 function showCalcTaxaGasolinaMoby(element) {
   consumo = input_consumoMedio.value * input_dias.value
   taxa = ((input_valorCorrida.value * input_corrida.value) * input_dias.value) * 0.11
-  element.innerHTML = "R$" + ((((input_valorCorrida.value * input_corrida.value) * input_dias.value) - taxa) - consumo).toFixed(2)
+  total = ((((input_valorCorrida.value * input_corrida.value) * input_dias.value) - taxa) - consumo).toFixed(2)
+  element.innerHTML = "R$" + total
+      if(total < 0){
+        document.getElementsByClassName("total-taxa-gasolina-moby")[0].style.color="red"
+      }
 }
 
 function showCalcTaxaGasolinaA(element) {
   consumo = input_consumoMedio.value * input_dias.value
   taxa = ((input_valorCorrida.value * input_corrida.value) * input_dias.value) * 0.31
-  element.innerHTML = "R$" + ((((input_valorCorrida.value * input_corrida.value) * input_dias.value) - taxa) - consumo).toFixed(2)
+  total =  ((((input_valorCorrida.value * input_corrida.value) * input_dias.value) - taxa) - consumo).toFixed(2)
+  element.innerHTML = "R$" + total
+     if(total < 0){
+       document.getElementsByClassName("total-taxa-gasolina-a")[0].style.color="red"
+     }
 }
 
 function showCalcTaxaGasolinaB(element) {
   consumo = input_consumoMedio.value * input_dias.value
   taxa = ((input_valorCorrida.value * input_corrida.value) * input_dias.value) * 0.29
-  element.innerHTML = "R$" + ((((input_valorCorrida.value * input_corrida.value) * input_dias.value) - taxa) - consumo).toFixed(2)
+  total = ((((input_valorCorrida.value * input_corrida.value) * input_dias.value) - taxa) - consumo).toFixed(2)
+  element.innerHTML = "R$" + total
+   if(total < 0){
+     document.getElementsByClassName("total-taxa-gasolina-b")[0].style.color="red"
+   }
 }
 
 function updateDays(element) {
